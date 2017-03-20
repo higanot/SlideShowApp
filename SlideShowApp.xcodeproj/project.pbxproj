@@ -14,6 +14,9 @@
 		16CB97571E7F7F8900C8877C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CB97551E7F7F8900C8877C /* LaunchScreen.storyboard */; };
 		16CB97621E7F7F8900C8877C /* SlideShowAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CB97611E7F7F8900C8877C /* SlideShowAppTests.swift */; };
 		16CB976D1E7F7F8900C8877C /* SlideShowAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CB976C1E7F7F8900C8877C /* SlideShowAppUITests.swift */; };
+		16CB977B1E7F819700C8877C /* niku-zushi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16CB977A1E7F819700C8877C /* niku-zushi.jpeg */; };
+		16CB977D1E7F81A200C8877C /* yakiniku.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16CB977C1E7F81A200C8877C /* yakiniku.jpg */; };
+		16CB977F1E7F81A700C8877C /* steak.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16CB977E1E7F81A700C8877C /* steak.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		16CB97681E7F7F8900C8877C /* SlideShowAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideShowAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CB976C1E7F7F8900C8877C /* SlideShowAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideShowAppUITests.swift; sourceTree = "<group>"; };
 		16CB976E1E7F7F8900C8877C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16CB977A1E7F819700C8877C /* niku-zushi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "niku-zushi.jpeg"; sourceTree = "<group>"; };
+		16CB977C1E7F81A200C8877C /* yakiniku.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yakiniku.jpg; sourceTree = "<group>"; };
+		16CB977E1E7F81A700C8877C /* steak.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = steak.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,9 @@
 				16CB97601E7F7F8900C8877C /* SlideShowAppTests */,
 				16CB976B1E7F7F8900C8877C /* SlideShowAppUITests */,
 				16CB974A1E7F7F8900C8877C /* Products */,
+				16CB977A1E7F819700C8877C /* niku-zushi.jpeg */,
+				16CB977C1E7F81A200C8877C /* yakiniku.jpg */,
+				16CB977E1E7F81A700C8877C /* steak.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -234,6 +243,9 @@
 			files = (
 				16CB97571E7F7F8900C8877C /* LaunchScreen.storyboard in Resources */,
 				16CB97541E7F7F8900C8877C /* Assets.xcassets in Resources */,
+				16CB977B1E7F819700C8877C /* niku-zushi.jpeg in Resources */,
+				16CB977D1E7F81A200C8877C /* yakiniku.jpg in Resources */,
+				16CB977F1E7F81A700C8877C /* steak.jpg in Resources */,
 				16CB97521E7F7F8900C8877C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
+  
+  @IBOutlet weak var nextButton: UIButton!
+  
+  @IBOutlet weak var backButton: UIButton!
+  
+  @IBOutlet weak var imageView: UIImageView!
+  
+  let imageArray = [UIImage(named:"niku-zushi.jpeg"), UIImage(named:"yakiniku.jpeg"), UIImage(named:"steak.jpg")]
+  
+  var imageIndex = 0
+  
+  @IBAction func showNextImage(_ sender: Any) {
+    
+    // 次のイメージを切り替える
+    imageIndex += 1
+    
+    if imageIndex <= imageArray[imageIndex]
+    imageView.image = nextImage
+    
+  }
+  
+  
 
   override func viewDidLoad() {
     super.viewDidLoad()
