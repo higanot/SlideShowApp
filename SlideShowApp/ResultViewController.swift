@@ -2,7 +2,7 @@
 //  ResultViewController.swift
 //  SlideShowApp
 //
-//  Created by 日向野卓也 on 2017/03/21.
+//  Created by HT on 2017/03/21.
 //  Copyright © 2017年 GitHubhiganot. All rights reserved.
 //
 

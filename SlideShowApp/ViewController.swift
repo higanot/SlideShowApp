@@ -3,7 +3,7 @@
 //  ViewController.swift
 //  SlideShowApp
 //
-//  Created by 日向野卓也 on 2017/03/20.
+//  Created by HT on 2017/03/20.
 //  Copyright © 2017年 GitHubhiganot. All rights reserved.
 //
 
@@ -13,6 +13,13 @@ class ViewController: UIViewController {
   
   
   @IBOutlet weak var imageView: UIImageView!
+  
+  @IBAction func onTapImage(_ sender: Any) {
+    
+    // セグエを使用して画面を遷移させる
+    performSegue(withIdentifier: "result", sender: nil)
+    
+  }
   
   @IBAction func onNext(_ sender: Any) {
   
