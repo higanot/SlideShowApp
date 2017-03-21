@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		169DD5E01E80F764002A1FE7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169DD5DF1E80F764002A1FE7 /* ResultViewController.swift */; };
 		16CB974D1E7F7F8900C8877C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CB974C1E7F7F8900C8877C /* AppDelegate.swift */; };
 		16CB974F1E7F7F8900C8877C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CB974E1E7F7F8900C8877C /* ViewController.swift */; };
 		16CB97521E7F7F8900C8877C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CB97501E7F7F8900C8877C /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		169DD5DF1E80F764002A1FE7 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		16CB97491E7F7F8900C8877C /* SlideShowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideShowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16CB974C1E7F7F8900C8877C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16CB974E1E7F7F8900C8877C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				16CB974C1E7F7F8900C8877C /* AppDelegate.swift */,
 				16CB974E1E7F7F8900C8877C /* ViewController.swift */,
 				16CB97501E7F7F8900C8877C /* Main.storyboard */,
+				169DD5DF1E80F764002A1FE7 /* ResultViewController.swift */,
 				16CB97531E7F7F8900C8877C /* Assets.xcassets */,
 				16CB97551E7F7F8900C8877C /* LaunchScreen.storyboard */,
 				16CB97581E7F7F8900C8877C /* Info.plist */,
@@ -273,6 +276,7 @@
 			files = (
 				16CB974F1E7F7F8900C8877C /* ViewController.swift in Sources */,
 				16CB974D1E7F7F8900C8877C /* AppDelegate.swift in Sources */,
+				169DD5E01E80F764002A1FE7 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +521,7 @@
 				16CB97731E7F7F8900C8877C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16CB97741E7F7F8900C8877C /* Build configuration list for PBXNativeTarget "SlideShowAppTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +530,7 @@
 				16CB97761E7F7F8900C8877C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16CB97771E7F7F8900C8877C /* Build configuration list for PBXNativeTarget "SlideShowAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +539,7 @@
 				16CB97791E7F7F8900C8877C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
