@@ -14,12 +14,24 @@ class ViewController: UIViewController {
   
   @IBOutlet weak var imageView: UIImageView!
   
+  @IBOutlet weak var playButton: UIButton!
+  
+  @IBOutlet weak var prevButton: UIButton!
+  
+  @IBOutlet weak var goButton: UIButton!
+  
+  
   @IBAction func onTapImage(_ sender: Any) {
     
     // セグエを使用して画面を遷移させる
     performSegue(withIdentifier: "result", sender: nil)
+  
+    
     
   }
+  
+  // 画像の名前の配列
+  let imageNameArray = ["niku-zushi.jpeg","yakiniku.jpg", "steak.jpg"]
   
   @IBAction func onNext(_ sender: Any) {
   
@@ -31,8 +43,6 @@ class ViewController: UIViewController {
     
   }
   
-
-
   @IBAction func onPrev(_ sender: Any) {
 
     // 表示している画像の番号を1減らす
@@ -43,23 +53,49 @@ class ViewController: UIViewController {
     
   }
   
-  @IBAction func onAct(_ sender: Any) {
+  var timer: Timer? = nil
   
-    // 2.0秒間隔でアニメーションを遷移させる
-    imageView.animationDuration = 2.0
-    
-    // 3回アニメーションを繰り返す
-    imageView.animationRepeatCount = 3
-    
-    // アニメーションを開始する
-    imageView.startAnimating()
-    
-    // アニメーションを終了する
-    // imageView.stopAnimating()
-    
-    
+  func timerCall() {
+    // 次の画像を表示
   }
   
+  
+ 
+  @IBAction func onAct(_ sender: Any) {
+    
+    if timer == nil { // タイマー起動
+      timer = Timer.scheduledTimer(timeInterval:2.0, target: self, selector: #selector(onNext), userInfo: nil, repeats:true)
+      
+      // タイトルを変更する（再生から一時停止）
+      goButton.setTitle("一時停止", for: .normal)
+      
+      // 進むボタンを使用不可にする
+      playButton.isEnabled = false
+      
+      // 戻るボタンを使用不可にする
+      prevButton.isEnabled = false
+
+    }
+    
+    else { // タイマー停止
+      
+      // タイマーを停止させる
+      timer?.invalidate()
+      timer = nil
+      
+      // ボタンのタイトルを変更する（一時停止から再生）
+      goButton.setTitle("再生", for: .normal)
+      
+      // 進むボタンを使用可にする
+      playButton.isEnabled = true
+      
+      // 戻るボタンを使用可にする
+      prevButton.isEnabled = true
+      
+    
+    }
+  
+  }
   
   // 表示している画像の番号
   var dispImageNo = 0
@@ -67,8 +103,7 @@ class ViewController: UIViewController {
   // 表示している画像の番号を基に画像を表示する
   func displayImage() {
     
-    // 画像の名前の配列
-    let imageNameArray = ["niku-zushi.jpeg","yakiniku.jpg", "steak.jpg"]
+
     
     // 画像の番号が正常な範囲を指しているかチェック
     
@@ -107,6 +142,17 @@ class ViewController: UIViewController {
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    // segueから遷移先のResultViewControllerを取得する
+    let resultViewController: ResultViewController = segue.destination as! ResultViewController
+    
+    // 遷移先のResultViewControllerで宣言している値を代入して渡す
+    let name = imageNameArray[dispImageNo]
+    resultViewController.name = name
+    
   }
   
   //他の画面からsegueを使って戻ってきたときに呼ばれる
