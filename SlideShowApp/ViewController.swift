@@ -25,8 +25,21 @@ class ViewController: UIViewController {
     
     // セグエを使用して画面を遷移させる
     performSegue(withIdentifier: "result", sender: nil)
-  
     
+    // タイマーが起動しているなら停止させる
+    if timer != nil {
+      timer?.invalidate()
+      timer = nil
+      
+      // ボタンのタイトルを変更する（一時停止から再生）
+      goButton.setTitle("再生", for: .normal)
+      
+      // 進むボタンを使用可にする
+      playButton.isEnabled = true
+      
+      // 戻るボタンを使用可にする
+      prevButton.isEnabled = true
+    }
     
   }
   
@@ -55,12 +68,6 @@ class ViewController: UIViewController {
   
   var timer: Timer? = nil
   
-  func timerCall() {
-    // 次の画像を表示
-  }
-  
-  
- 
   @IBAction func onAct(_ sender: Any) {
     
     if timer == nil { // タイマー起動
